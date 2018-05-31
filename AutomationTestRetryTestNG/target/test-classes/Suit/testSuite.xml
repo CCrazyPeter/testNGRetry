@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="RetryTest" parallel="methods" thread-count="1">
+
+    <test name="SampleTest">
+        <classes>
+            <class name="com.testNG.retry.Automation.test.AppTest" />
+        </classes>
+    </test>
+    
+    <listeners>
+		<listener class-name="com.testNG.retry.Automation.listener.RetryListener"></listener>
+		<listener class-name="com.testNG.retry.Automation.listener.TestngListener"></listener>
+	</listeners>
+</suite>

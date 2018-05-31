@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-RetryTest">
+              <span class="suite-name border-failed">RetryTest</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-RetryTest">
+                    <span>D:\Developer\eclipse2017\Automation\src\test\resources\Suit\testSuite.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-RetryTest">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-RetryTest">
+                    <span>1 group</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-RetryTest">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-RetryTest">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-RetryTest">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-RetryTest">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">5 methods, 1 failed,  3 skipped,  1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-RetryTest" class="hide-methods failed suite-RetryTest"> (hide)</a> <!-- hide-methods failed suite-RetryTest -->
+                      <a href="#" panel-name="suite-RetryTest" class="show-methods failed suite-RetryTest"> (show)</a> <!-- show-methods failed suite-RetryTest -->
+                    </span>
+                    <div class="method-list-content failed suite-RetryTest">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RetryTest" title="com.testNG.retry.Automation.test.AppTest" hash-for-method="testCase1">testCase1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-RetryTest -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-RetryTest" class="hide-methods skipped suite-RetryTest"> (hide)</a> <!-- hide-methods skipped suite-RetryTest -->
+                      <a href="#" panel-name="suite-RetryTest" class="show-methods skipped suite-RetryTest"> (show)</a> <!-- show-methods skipped suite-RetryTest -->
+                    </span>
+                    <div class="method-list-content skipped suite-RetryTest">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RetryTest" title="com.testNG.retry.Automation.test.AppTest" hash-for-method="testCase1">testCase1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RetryTest" title="com.testNG.retry.Automation.test.AppTest" hash-for-method="testCase1">testCase1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RetryTest" title="com.testNG.retry.Automation.test.AppTest" hash-for-method="testCase1">testCase1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-RetryTest -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-RetryTest" class="hide-methods passed suite-RetryTest"> (hide)</a> <!-- hide-methods passed suite-RetryTest -->
+                      <a href="#" panel-name="suite-RetryTest" class="show-methods passed suite-RetryTest"> (show)</a> <!-- show-methods passed suite-RetryTest -->
+                    </span>
+                    <div class="method-list-content passed suite-RetryTest">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RetryTest" title="com.testNG.retry.Automation.test.AppTest" hash-for-method="testCase2">testCase2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-RetryTest -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-RetryTest" class="panel RetryTest">
+          <div class="suite-RetryTest-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.testNG.retry.Automation.test.AppTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCase1">
+                  </a> <!-- testCase1 -->
+                  <span class="method-name">testCase1</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;找不到我&quot;}
+  (Session info: chrome=66.0.3359.181)
+  (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.33.0&apos;, revision: &apos;4e90c97&apos;, time: &apos;2013-05-22 15:33:32&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7), userDataDir=C:\Users\pzhang7\AppData\Local\Temp\scoped_dir32152_8162}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=66.0.3359.181, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: c16019a3020a58f86ddd0bffedd353d6
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:191)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:307)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:348)
+	at org.openqa.selenium.By$ById.findElement(By.java:216)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:299)
+	at com.testNG.retry.Automation.test.AppTest.testCase1(AppTest.java:30)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 14 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-RetryTest-class-failed -->
+          <div class="suite-RetryTest-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.testNG.retry.Automation.test.AppTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCase1">
+                  </a> <!-- testCase1 -->
+                  <span class="method-name">testCase1</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;找不到我&quot;}
+  (Session info: chrome=66.0.3359.181)
+  (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 15 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.33.0&apos;, revision: &apos;4e90c97&apos;, time: &apos;2013-05-22 15:33:32&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7), userDataDir=C:\Users\pzhang7\AppData\Local\Temp\scoped_dir32152_8162}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=66.0.3359.181, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: c16019a3020a58f86ddd0bffedd353d6
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:191)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:307)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:348)
+	at org.openqa.selenium.By$ById.findElement(By.java:216)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:299)
+	at com.testNG.retry.Automation.test.AppTest.testCase1(AppTest.java:30)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 14 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCase1">
+                  </a> <!-- testCase1 -->
+                  <span class="method-name">testCase1</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;找不到我&quot;}
+  (Session info: chrome=66.0.3359.181)
+  (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 29 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.33.0&apos;, revision: &apos;4e90c97&apos;, time: &apos;2013-05-22 15:33:32&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7), userDataDir=C:\Users\pzhang7\AppData\Local\Temp\scoped_dir32152_8162}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=66.0.3359.181, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: c16019a3020a58f86ddd0bffedd353d6
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:191)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:307)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:348)
+	at org.openqa.selenium.By$ById.findElement(By.java:216)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:299)
+	at com.testNG.retry.Automation.test.AppTest.testCase1(AppTest.java:30)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 14 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCase1">
+                  </a> <!-- testCase1 -->
+                  <span class="method-name">testCase1</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;找不到我&quot;}
+  (Session info: chrome=66.0.3359.181)
+  (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 18 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.33.0&apos;, revision: &apos;4e90c97&apos;, time: &apos;2013-05-22 15:33:32&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7), userDataDir=C:\Users\pzhang7\AppData\Local\Temp\scoped_dir32152_8162}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=66.0.3359.181, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: c16019a3020a58f86ddd0bffedd353d6
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:191)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:307)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:348)
+	at org.openqa.selenium.By$ById.findElement(By.java:216)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:299)
+	at com.testNG.retry.Automation.test.AppTest.testCase1(AppTest.java:30)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 14 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-RetryTest-class-skipped -->
+          <div class="suite-RetryTest-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.testNG.retry.Automation.test.AppTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCase2">
+                  </a> <!-- testCase2 -->
+                  <span class="method-name">testCase2</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-RetryTest-class-passed -->
+        </div> <!-- panel RetryTest -->
+        <div panel-name="test-xml-RetryTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">D:\Developer\eclipse2017\Automation\src\test\resources\Suit\testSuite.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;1&quot; guice-stage=&quot;DEVELOPMENT&quot; name=&quot;RetryTest&quot; parallel=&quot;methods&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.testNG.retry.Automation.listener.RetryListener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test name=&quot;SampleTest&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.testNG.retry.Automation.test.AppTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- SampleTest --&gt;
+&lt;/suite&gt; &lt;!-- RetryTest --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-RetryTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for RetryTest</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">SampleTest (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-RetryTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for RetryTest</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">SMOKE</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">testCase1</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testCase2</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-RetryTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for RetryTest</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_RetryTest');
+function tableData_RetryTest() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(5);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'testCase2')
+data.setCell(0, 2, 'com.testNG.retry.Automation.test.AppTest')
+data.setCell(0, 3, 5646);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testCase1')
+data.setCell(1, 2, 'com.testNG.retry.Automation.test.AppTest')
+data.setCell(1, 3, 292);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testCase1')
+data.setCell(2, 2, 'com.testNG.retry.Automation.test.AppTest')
+data.setCell(2, 3, 182);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testCase1')
+data.setCell(3, 2, 'com.testNG.retry.Automation.test.AppTest')
+data.setCell(3, 3, 172);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testCase1')
+data.setCell(4, 2, 'com.testNG.retry.Automation.test.AppTest')
+data.setCell(4, 3, 161);
+window.suiteTableData['RetryTest']= { tableData: data, tableDiv: 'times-div-RetryTest'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 6 seconds</span>
+              <div id="times-div-RetryTest">
+              </div> <!-- times-div-RetryTest -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-RetryTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for RetryTest</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testCase1</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">RunCount=4</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testCase1</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">RunCount=2</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testCase1</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">RunCount=3</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-RetryTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-RetryTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.testNG.retry.Automation.test.AppTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">BeforeMethod</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testCase1</span>
+                <span class="method-start">575 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">BeforeMethod</span>
+                <span class="method-start">871 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testCase1</span>
+                <span class="method-start">1070 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">BeforeMethod</span>
+                <span class="method-start">1244 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testCase1</span>
+                <span class="method-start">1367 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">BeforeMethod</span>
+                <span class="method-start">1551 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testCase1</span>
+                <span class="method-start">1657 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">BeforeMethod</span>
+                <span class="method-start">1819 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testCase2</span>
+                <span class="method-start">1920 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

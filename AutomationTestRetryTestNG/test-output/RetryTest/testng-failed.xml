@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [RetryTest]" parallel="methods">
+  <listeners>
+    <listener class-name="com.testNG.retry.Automation.listener.RetryListener"/>
+  </listeners>
+  <test name="SampleTest(failed)" parallel="methods">
+    <classes>
+      <class name="com.testNG.retry.Automation.test.AppTest">
+        <methods>
+          <include name="testCase1"/>
+          <include name="BeforeMethod"/>
+        </methods>
+      </class> <!-- com.testNG.retry.Automation.test.AppTest -->
+    </classes>
+  </test> <!-- SampleTest(failed) -->
+</suite> <!-- Failed suite [RetryTest] -->
